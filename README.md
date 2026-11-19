@@ -62,7 +62,7 @@ sudo rm -f /etc/nginx/sites-enabled/default
 sudo nginx -t && sudo systemctl restart nginx
 ```
 
-### 生产部署（Python 轻量方案）（但是官方不推荐）
+### 生产部署（Python 轻量方案）（但是）
 
 不想装 Nginx 时可临时用 Python 跑：
 
@@ -95,7 +95,8 @@ name = "mcserver"
 type = "http"
 localPort = 80
 localIp = "127.0.0.1"
-customDomains = ["mc.kkkttt1234.top"]
+customDomains = ["mc.summer
+.top"]
 ```
 
 ### git 同步更新
@@ -106,7 +107,7 @@ git add -A && git commit -m "更新说明" && git push
 
 # 服务器拉取
 ssh 你的服务器
-cd ~/web/minecraft/
+cd ~/web/server/
 git pull
 # Nginx/Python 自动服务新文件，无需重启
 ```
